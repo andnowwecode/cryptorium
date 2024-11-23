@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import COIN_GECKO_API_KEY from '../../api'
 
 export const CoinContext = createContext();
 
@@ -13,7 +14,7 @@ const CoinContextProvider = (props)=>{
     const fetchAllCoin = async ()=>{
         const options = {
             method: 'GET',
-            headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-vwPRcnsmiw8hGFwcCBjxxD6J'}
+            headers: {accept: 'application/json', 'x-cg-demo-api-key': COIN_GECKO_API_KEY}
           };
           
           fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.name}`, options)

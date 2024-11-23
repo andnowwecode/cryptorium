@@ -3,6 +3,7 @@ import './Home.css'
 import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom'
 
+
 const Home = () => {
 
 const {allCoin, currency} = useContext(CoinContext);
@@ -32,7 +33,7 @@ useEffect(()=>{
     <div className='home'>
       <div className='hero'>
         <h1>Your Crypto Marketplace</h1>
-        <p>Welcome to <b>Cryptorium</b>. Browse and trade cryptocurrencies and sign up to find out more.</p>
+        <p>Welcome to <b>Cryptorium</b>. Browse cryptocurrencies, follow their market changes and sign up to find out more.</p>
         <form onSubmit={searchHandler}>
           <input onChange={inputHandler} list='coinlist' value={input} type='text' placeholder='Search crypto..' required/>
           

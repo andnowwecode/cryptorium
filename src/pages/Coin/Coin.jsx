@@ -3,6 +3,9 @@ import './Coin.css'
 import { useParams } from 'react-router-dom'
 import { CoinContext } from '../../context/CoinContext';
 import LineChart from '../../components/linechart/linechart';
+import COIN_GECKO_API_KEY from '../../../api'
+
+
 
 const Coin = () => {
 
@@ -14,7 +17,7 @@ const Coin = () => {
   const fetchCoinData = async ()=>{
     const options = {
       method: 'GET',
-      headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-vwPRcnsmiw8hGFwcCBjxxD6J'}
+      headers: {accept: 'application/json', 'x-cg-demo-api-key': COIN_GECKO_API_KEY}
     };
     
     fetch(`https://api.coingecko.com/api/v3/coins/${coinId}`, options)
@@ -26,7 +29,7 @@ const Coin = () => {
   const fetchHistoricalData = async ()=>{
     const options = {
       method: 'GET',
-      headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-vwPRcnsmiw8hGFwcCBjxxD6J'}
+      headers: {accept: 'application/json', 'x-cg-demo-api-key': COIN_GECKO_API_KEY}
     };
     
     fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency.name}&days=10&interval=daily`, options)
@@ -51,9 +54,6 @@ const Coin = () => {
         <LineChart historicalData={historicalData}/>
       </div>
       <div className="coin-info">
-        <div>
-          <p>{coinData.description.en}</p>
-        </div>
         <ul>
           <li>Crypto Market Rank</li>
           <li>{coinData.market_cap_rank}</li>
