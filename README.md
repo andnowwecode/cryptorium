@@ -10,14 +10,14 @@ Cryptorium is a cryptocurrency tracker where users can browse cryptocurrencies a
 - Interactive navigation using React Router.
 ...the features, blog, login functionalities are not completed...
 
-### Built With 🛠️
-React: Frontend framework.
-Vite: Development build tool.
-React Router: Navigation.
-CoinGecko API: Cryptocurrency data.
-CSS: Styling.
+## Built With 🛠️
+- React: Frontend framework.
+- Vite: Development build tool.
+- React Router: Navigation.
+- CoinGecko API: Cryptocurrency data.
+- CSS: Styling.
 
-#### Credits ✨
+## Credits ✨
 
  - All credits go to @GreatStackDev as this project was built following his tutorial 'Create a 
  Crypto Price Tracking App using React JS & CoinGecko API'
