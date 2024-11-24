@@ -18,7 +18,6 @@ Cryptorium is a cryptocurrency tracker where users can browse cryptocurrencies a
 - CSS: Styling.
 
 ## Credits ✨
-
  - All credits go to @GreatStackDev as this project was built following his tutorial 'Create a 
  Crypto Price Tracking App using React JS & CoinGecko API'
  Tutorial link: https://www.youtube.com/watch?v=jZFaMEqEqEQ
@@ -26,7 +25,6 @@ Cryptorium is a cryptocurrency tracker where users can browse cryptocurrencies a
  https://www.coingecko.com
  
 
-##### License 📜
-
- This project is licensed under the MIT License - see the LICENSE.txt file for details.
+## License 📜
+This project is licensed under the MIT License - see the LICENSE.txt file for details.
 
