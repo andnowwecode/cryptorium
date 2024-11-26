@@ -8,7 +8,7 @@ Cryptorium is a cryptocurrency tracker where users can browse cryptocurrencies a
 - Dynamic currency conversion (EUR, USD, GBP).
 - Responsive design for all devices.
 - Interactive navigation using React Router.
-...the features, blog, login functionalities are not completed...
+- ...the features, blog, login functionalities are not completed
 
 ## Built With 🛠️
 - React: Frontend framework.
